@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Accueil</title>
+</head>
+<body class="bg-white">
+
+  <!-- Bienvenue -->
+  <div id="welcome" class="vh-100 d-flex justify-content-center align-items-center fade-in">
+    <h1 class="fw-light display-4">Bienvenue</h1>
+  </div>
+
+  <!-- Accueil -->
+  <div id="home" class="vh-100 d-flex flex-column justify-content-center align-items-center fade-out">
+
+    <h1 class="mb-5 fw-light fs-3">Faites vos choix</h1>
+
+    <nav class="d-flex justify-content-between w-75 px-5">
+
+      <!-- Utilitaires -->
+      <div data-menu class="menu-item position-relative text-center w-50" role="button">
+        <span class="fs-4">Utilitaires</span>
+
+        <div class="submenu submenu-mobile shadow-sm rounded bg-white px-4 py-2">
+          <a href="#" class="d-block text-decoration-none text-dark">Imposition à Zorglubien</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Prix Photocopie</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Une seconde après</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Le rendu de monnaie</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Validation email</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Niveau d'assurance</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Validation mot de passe</a>
+        </div>
+      </div>
+
+      <!-- Jeux -->
+      <div data-menu class="menu-item position-relative text-center w-50" role="button">
+        <span class="fs-4">Jeux</span>
+
+        <div class="submenu submenu-mobile shadow-sm rounded bg-white px-4 py-2">
+          <a href="#" class="d-block text-decoration-none text-dark">Juste Prix</a>
+          <a href="#" class="d-block text-decoration-none text-dark">Pendu</a>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
