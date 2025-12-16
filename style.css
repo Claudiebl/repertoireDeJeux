@@ -16,15 +16,12 @@
   pointer-events: none;
 }
 
-/* submenus */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+/* Navbar */
+a:hover {
+  color: white!important;
+  background-color: black;
 }
+
 
 /* desktop hover */
 @media (hover: hover) {
@@ -36,17 +33,4 @@
 /* clic */
 .menu-item.active .submenu {
   display: block;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .submenu-mobile {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: none;
-    width: 100vw;
-    border-radius: 0;
-  }
 }
