@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Question 4</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center">
+        <h2>Votre rendu de monnaie</h2>
+        <form>
+            <div class="mb-3 mt-3">
+                <label for="saisiePrix">Saisissez le montant total à payer</label>
+                <input type="number" class="form-control" id="saisiePrix" name="saisiePrix" min="1" placeholder="prix">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="saisieMonnaie">Saisissez le montant donné par le client</label>
+                <input type="number" class="form-control" id="saisieMonnaie" name="saisieMonnaie" min="1" placeholder="monnaie">
+            </div>
+            <div>
+            <button type="button" id="button" class="btn btn-dark">Rendre la monnaie</button>
+            </div>
+        </form>
+        <div class="row mx-4">
+            <div class="col-sm-1 col-lg-4 mt-4">
+                <div id="message10" class="text-bg-danger rounded"></div>
+                <img src="./img/dixEuros.webp" alt="dix dixEuros">
+            </div>
+            <div class="col-sm-1 col-lg-4 mt-4">
+                <div id="message5" class="text-bg-danger rounded"></div>
+                <img src="./img/cinqEuros.jpg" alt="cinqEuros">
+            </div>
+            <div class="col-sm-1 col-lg-4 mt-4">
+                <div id="message1" class="text-bg-danger rounded"></div>
+                <img class="piece" src="./img/unEuro.png" alt="unEuro">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

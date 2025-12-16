@@ -1,0 +1,66 @@
+
+#imgADevine > img {
+    max-width: 350px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Overlay plein écran */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* fondu noir */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenu du message */
+#overlay-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 2rem;
+    max-width: 600px;
+    animation: pop 0.4s ease;
+}
+
+/* Animation popup */
+@keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Confettis */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: -10px;
+    opacity: 0.8;
+    z-index: 10000;
+    pointer-events: none;
+    animation: tomber 3s linear forwards;
+}
+
+@keyframes tomber {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}

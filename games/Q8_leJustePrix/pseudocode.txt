@@ -1,0 +1,53 @@
+DÉBUT
+
+// 1. Définir les objets et leurs images
+Créer un tableau objets contenant :
+    - "Chaise de Bureau"
+    - "Costume d'Halloween"
+    - "BBQ"
+    - "Guitare acoustique"
+    - "Sac Louis Vuitton"
+
+Créer un tableau images contenant les chemins/URL/nom de fichiers
+    (même ordre que les objets)
+
+// 2. Choisir un objet aléatoire
+indiceAleatoire ← nombre entier aléatoire entre 0 et taille(objets) - 1
+objetChoisi ← objets[indiceAleatoire]
+imageChoisie ← images[indiceAleatoire]
+
+// 3. Générer le prix secret de l'objet
+prixSecret ← nombre entier aléatoire entre 1 et 100
+
+// 4. Initialiser les tentatives
+tentativeMax ← 10
+tentativeCourante ← 1
+victoire ← FAUX
+
+// 5. Boucle de jeu
+TANT QUE tentativeCourante ≤ tentativeMax ET victoire = FAUX
+
+    Afficher "Tentative n°" + tentativeCourante
+    demander au joueur : "Propose un prix : "
+    saisie ← nombre entré par le joueur
+
+    SI saisie = prixSecret ALORS
+        victoire ← VRAI
+    SINON SI saisie < prixSecret ALORS
+        Afficher "C'est plus !"
+    SINON
+        Afficher "C'est moins !"
+    FIN SI
+
+    tentativeCourante ← tentativeCourante + 1
+
+FIN TANT QUE
+
+// 6. Message final
+SI victoire = VRAI ALORS
+    Afficher "Bravo ! Tu as trouvé le juste prix !"
+SINON
+    Afficher "Perdu ! Le prix était : " + prixSecret
+FIN SI
+
+FIN

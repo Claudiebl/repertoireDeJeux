@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Question 5</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Email -->
+    <div class="container mt-5 text-center">
+        <h2>Connectez-vous</h2>
+        <form>
+            <div class="mb-3 mt-4">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" id="email" placeholder="Entrer votre email" name="email">
+            </div>
+            <div>
+                <div id="messageEmail"></div>
+            </div>
+    <!-- MDP -->
+            <div class="mb-3 mt-3">
+                <label for="inputPasseword">Saisissez un mot de passe</label>
+                <input type="text" class="form-control mt-2" id="inputPasseword" name="inputPasseword" placeholder="Entrer votre mot de passe">
+            </div>
+            <div class="mb-3">
+                <div id="messageMDP"></div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
